@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:layout_marginBottom="16dp"
+    android:paddingStart="0dp"
+    android:paddingTop="4dp"
+    android:paddingEnd="10dp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivEventImage"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toStartOf="@id/glV1"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:background="#444444" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glV1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toRightOf="@id/ivEventImage" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glV2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".95" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="4dp"
+        android:ellipsize="end"
+        android:lineSpacingExtra="6sp"
+        android:maxLines="2"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@id/tvTeamManager"
+        app:layout_constraintEnd_toStartOf="@id/glV2"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toEndOf="@id/glV1"
+        app:layout_constraintTop_toTopOf="@id/ivEventImage"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="Pudong Raiders" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTeamManager"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textSize="12sp"
+        android:textAppearance="?attr/textAppearanceBody2"
+        android:textColor="#757575"
+        app:layout_constraintBottom_toTopOf="@id/tvTeamDetail"
+        app:layout_constraintEnd_toStartOf="@id/glV2"
+        app:layout_constraintStart_toEndOf="@id/glV1"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        tools:text="Brackenridge Park" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTeamDetail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:ellipsize="end"
+        android:textSize="12sp"
+        android:maxLines="4"
+        android:textAppearance="?attr/textAppearanceBody2"
+        android:textColor="#757575"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/glV2"
+        app:layout_constraintStart_toEndOf="@id/glV1"
+        app:layout_constraintTop_toBottomOf="@id/tvTeamManager"
+        tools:text="1 Spot Left" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

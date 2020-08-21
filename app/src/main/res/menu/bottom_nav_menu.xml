@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/navigation_shop"
+        android:icon="@drawable/ic_noun_nike_1465_2751729"
+        android:title="@string/title_shop" />
+
+    <item
+        android:id="@+id/navigation_events"
+        android:icon="@drawable/ic_noun_football_1856288"
+        android:title="@string/title_events" />
+
+    <item
+        android:id="@+id/navigation_training"
+        android:icon="@drawable/ic_noun_coach_2946349"
+        android:title="@string/title_training" />
+
+    <item
+        android:id="@+id/navigation_profiles"
+        android:icon="@drawable/ic_noun_profile_1233972"
+        android:title="@string/title_profile" />
+
+</menu>

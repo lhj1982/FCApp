@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.events.fragment.EventsFragment">
+
+    <LinearLayout
+        android:layout_marginTop="58dp"
+        android:layout_marginBottom="28dp"
+        android:layout_marginLeft="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/nike_experiences_title"
+            android:fontFamily="@font/nike_font_helvetica_bold"
+            android:textColor="#000000"
+            android:text="Nike F.C. Experiences"
+            android:textSize="28sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/nike_experiences_subtitle"
+            android:fontFamily="@font/nike_font_helvetica_bold"
+            android:textColor="#999999"
+            android:textSize="28sp"
+            android:text="In Your City"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:fontFamily="@font/nike_font_helvetica_bold"
+            android:textColor="#999999"
+            android:textSize="28sp"
+            android:text="Shanghai ˇ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <include layout="@layout/layout_eventcard_league"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"/>
+
+    <include
+        android:id="@+id/find_a_team_card" layout="@layout/layout_eventcard_team"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"/>
+
+    <include layout="@layout/layout_eventcard_social"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"/>
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/NikeFC.iml" filepath="$PROJECT_DIR$/.idea/modules/NikeFC.iml" group="NikeFC" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/NikeFC-app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/NikeFC-app.iml" group="NikeFC/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="NikeFC/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/nikeFC-NikeFC.iml" filepath="$PROJECT_DIR$/.idea/modules/nikeFC-NikeFC.iml" group="NikeFC" />
+    </modules>
+  </component>
+</project>

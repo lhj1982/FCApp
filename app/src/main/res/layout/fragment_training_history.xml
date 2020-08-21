@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/find_a_team"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.TrainingHistoryActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_gravity="top"
+        android:background="#ffffff"
+        android:elevation="4dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:navigationIcon="@drawable/ic_back_arrow"
+        app:menu="@menu/team_menu"
+        app:title="Training History" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="64dp"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:maxLines="1"
+                android:fontFamily="@font/nike_font_trade_gothic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:paddingBottom="4dp"
+                android:paddingEnd="12dp"
+                android:paddingTop="12dp"
+                android:text="Your Current Stats" />
+
+            <ImageView
+                android:id="@+id/stats"
+                android:paddingTop="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="14dp"
+                android:background="#eeeeee" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:maxLines="1"
+                android:fontFamily="@font/nike_font_trade_gothic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:paddingBottom="12dp"
+                android:paddingEnd="12dp"
+                android:paddingTop="12dp"
+                android:text="History" />
+
+            <include layout="@layout/training_history_entry"/>
+            <include layout="@layout/training_history_entry"/>
+
+
+        </LinearLayout>
+
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>
